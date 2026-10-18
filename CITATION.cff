@@ -1,8 +1,10 @@
-﻿cff-version: 1.2.0
+cff-version: 1.2.0
 message: "If you use this software or manuscript, please cite it as below."
+title: "Inner-Horizon Stability of the Hayward Metric: Closure Classes in the Ori Model, the Evaporation Clock and a Nonlinear Double-Null Test"
+abstract: "LaTeX source, compiled PDF, generalized Ori thin-shell model, and double-null Einstein-NED-scalar evolution code for Paper E."
 authors:
   - family-names: "Ownby"
     given-names: "Gracen"
-title: "Inner-Horizon Stability of the Hayward Metric: Closure Classes in the Ori Model, the Evaporation Clock and a Nonlinear Double-Null Test"
-version: "v1.0.0"
+version: "v1.0.1"
 date-released: "2026-10-18"
+license: "CC-BY-4.0"
