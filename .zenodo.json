@@ -1,0 +1,20 @@
+﻿{
+    "keywords":  [
+                     "general relativity",
+                     "black holes",
+                     "Hayward metric",
+                     "numerical relativity",
+                     "theoretical physics"
+                 ],
+    "license":  "cc-by-4.0",
+    "title":  "Inner-Horizon Stability of the Hayward Metric: Closure Classes in the Ori Model, the Evaporation Clock and a Nonlinear Double-Null Test",
+    "upload_type":  "publication",
+    "creators":  [
+                     {
+                         "name":  "Ownby, Gracen"
+                     }
+                 ],
+    "access_right":  "open",
+    "publication_type":  "preprint",
+    "description":  "LaTeX source, compiled PDF, generalized Ori thin-shell model, and double-null Einstein-NED-scalar evolution code for Paper E."
+}
