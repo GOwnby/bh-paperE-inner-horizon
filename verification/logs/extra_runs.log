@@ -1,0 +1,14 @@
+job extra_runs  (passage through m = infinity (v = 36.6) and the small-s fold runs)
+started 2026-10-21 04:05:20
+wall 16.8 s   cpu 2.6 s   rc 0
+
+### RUN 0  (cwd .)  extra_runs.py
+### rc=0  cpu=2.6s
+----- stdout -----
+(a) s=0: M_+ = R^3/2l^2 at v = [36.62]
+(b) s=0.001: stops at v*=36.55, M_+=0.588, R^3/2l0^2=0.591
+(b) s=0.01: stops at v*=36.17, M_+=0.571, R^3/2l0^2=0.591
+(b) s=0.1: stops at v*=32.41, M_+=0.529, R^3/2l0^2=0.591
+
+----- stderr -----
+

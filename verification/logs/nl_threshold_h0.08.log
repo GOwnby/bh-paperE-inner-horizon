@@ -1,0 +1,11 @@
+job nl_threshold_h0.08  (A_* by bisection and r_inf(A_*-A), h = 0.08 (h = 0.04, 0.02 are in --full; their stored files are analysed))
+started 2026-10-21 04:13:37
+wall 956.1 s   cpu 94.6 s   rc 0
+
+### RUN 0  (cwd nonlinear)  run_threshold.py 0.08
+### rc=0  cpu=94.6s
+----- stdout -----
+h 0.08 A* = 0.02043600443804007
+
+----- stderr -----
+

@@ -1,0 +1,12 @@
+job nl_saturation  (r_CH(u) saturation at A_*-A = 1e-10 (r_CH(40) vs r_CH(50), r_CH(30) vs r_CH(40)))
+started 2026-10-21 04:43:44
+wall 57.6 s   cpu 4.6 s   rc 0
+
+### RUN 0  (cwd nonlinear)  check_saturation.py
+### rc=0  cpu=4.6s
+----- stdout -----
+A*-A=1e-10: r_CH(30)=0.000461 r_CH(40)=0.000412 r_CH(50)=0.000412  r30/r40-1=0.1177  |r40-r50|=1.80e-08
+A*-A=1e-07: r_CH(30)=0.012933 r_CH(40)=0.012931 r_CH(50)=0.012931  r30/r40-1=0.0001  |r40-r50|=5.61e-10
+
+----- stderr -----
+

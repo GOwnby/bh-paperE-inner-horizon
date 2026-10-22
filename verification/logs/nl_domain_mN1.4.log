@@ -1,0 +1,12 @@
+job nl_domain_mN1.4  (A_* for m_N = 1.4, kappa_- u1 = 20 and 40)
+started 2026-10-21 04:29:34
+wall 3177.1 s   cpu 240.8 s   rc 0
+
+### RUN 0  (cwd nonlinear)  domain_mN1.4.py
+### rc=0  cpu=240.8s
+----- stdout -----
+kappa u1 = 20 (L=122.0): A* = 0.0497017404
+kappa u1 = 40 (L=243.9): A* = 0.0497017403
+
+----- stderr -----
+

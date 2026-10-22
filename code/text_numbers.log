@@ -1,0 +1,17 @@
+# (1) regime I
+s=-0.5: |G/(3M/R) - 1| at M=1e50, R=r_-=1.057475: 3.164e-14   (exact deviation ~ R^3/a(m) = 7.0e-52; the printed value is the double-precision tolerance of the log-space inversion of the closure)
+s=-1: G/(3M/R) = 0.894253 = a/(R^3+a) = 0.894253 (linear in M with this factor); relative difference 0.0e+00
+s=-0.01: log10(m_+) needed for M=6e5: 601.3
+# (2) regime III
+R = r_-(5) = 1.057475, R^3/(2 l^2) = 0.591262
+s=0.001: m_*=588.4  M_max=0.5879  M_max/(R^3/2l^2)=0.994
+s=0.01: m_*=57.7  M_max=0.5713  M_max/(R^3/2l^2)=0.966
+s=0.1: m_*=5.8  M_max=0.5294  M_max/(R^3/2l^2)=0.895
+threshold index s > R^3/a(m_inf) = 0.1183
+s=1 at R=r_-(5): numerical max_m M = 0.859696, analytic 0.859696
+s=2 at R=r_-(5): numerical max_m M = 1.298590, analytic 1.298590
+# (3) evaporation clock
+M_i/l = 9.1361e+38   Lambda = 5120 pi M_i^3 = 1.2266e+121
+2 ln(r_g/l) = 180.8 ;  3 ln(r_g/l) = 271.2   (e-folding time 1/kappa_- = l)
+# (4) interior transfer function, m_N = 5
+r_-=1.057475 r_+=9.897927  (1+(r_+/r_-)^2)/2 = 44.30

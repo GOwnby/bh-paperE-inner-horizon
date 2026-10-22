@@ -1,4 +1,5 @@
-"""Generates all numbers and figures of Paper E. Run: python3 make_results.py  (needs ori_model.py in the same folder)."""
+"""[Modified relative to the original only in the output path of the figure (../fig_ori_classes.png; original: ./fig_ori_classes.png). See PROVENANCE.md.]
+Generates all numbers and figures of Paper E. Run: python3 make_results.py  (needs ori_model.py in the same folder)."""
 import json, numpy as np, matplotlib; matplotlib.use('Agg'); import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
 from scipy.optimize import brentq
@@ -68,5 +69,5 @@ ax[1].set_xlabel('$v$'); ax[1].set_ylabel('$M_+$'); ax[1].set_title('(b) closure
 for pp,col in [(3.0,'C4'),(4.0,'C1'),(6.0,'C5')]:
     v,M=curves[(0.0,pp)]; ax[2].loglog(v[v>20],M[v>20],col,label=f'$p={pp:g}$: slope $p+1={pp+1:g}$')
 ax[2].set_xticks([30,100,300,600]); ax[2].set_xticklabels(['30','100','300','600']); ax[2].minorticks_off(); ax[2].set_xlabel('$v$'); ax[2].set_ylabel('$M_+$'); ax[2].set_title('(c) $s=0$: late power law'); ax[2].legend(fontsize=8)
-plt.tight_layout(); plt.savefig('fig_ori_classes.png',dpi=160)
+plt.tight_layout(); plt.savefig('../fig_ori_classes.png',dpi=160)
 print(json.dumps(out,indent=1)[:3500])

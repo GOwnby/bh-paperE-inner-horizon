@@ -1,0 +1,16 @@
+job eh_e8_flip_ratio  (phi_v^2/|T^q_vv| at v_flip)
+started 2026-10-21 05:37:26
+wall 422.7 s   cpu 44.2 s   rc 0
+
+### RUN 0  (cwd eh_init)  e8_flip_ratio.py gen3_B0.003_k1.5_v300.json
+### rc=0  cpu=44.2s
+----- stdout -----
+gen3_B0.003_k1.5_v300.json: k=1.5 B=0.003 kappa_-(mu_f)=0.795545
+eps=hbar/l^2   v_flip   phi_v^2/|T^q_vv| at v_flip   (T^q = eps kappa_-^2/(192 pi^2 r^2), r = r(v_flip))
+   1e-10    280.0   0.9595
+   1e-08    159.0   0.9089
+   1e-06    103.0   0.8751
+   1e-04     62.0   0.4406
+
+----- stderr -----
+

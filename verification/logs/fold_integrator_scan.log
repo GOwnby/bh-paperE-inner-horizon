@@ -1,0 +1,23 @@
+job fold_integrator_scan  (integrator dependence of the D0 = 1e-12 rows of Table fold (LSODA rtol sweep, DOP853, Radau, RK45))
+started 2026-10-21 04:03:46
+wall 1121.7 s   cpu 149.4 s   rc 0
+
+### RUN 0  (cwd .)  fold_integrator_scan.py all
+### rc=0  cpu=149.4s
+----- stdout -----
+integrator rtol        s=1: v*(D0=1e-6, 1e-9, 1e-12)        s=2: v*(D0=1e-6, 1e-9, 1e-12)
+LSODA   1e-10   (28.843, 39.629, 49.803)   (29.039, 39.808, 49.941)
+LSODA   1e-11   (28.843, 39.629, 49.804)   (29.039, 39.808, 49.974)
+LSODA   1e-12   (28.843, 39.629, 49.796)   (29.039, 39.808, 49.975)
+LSODA   1e-13   (28.843, 39.629, 49.797)   (29.039, 39.808, 49.971)
+LSODA   3e-14   (28.843, 39.629, 49.798)   (29.039, 39.808, 49.970)
+DOP853  1e-12   (49.805)   (49.978)
+DOP853  1e-13   (49.800)   (49.973)
+Radau   1e-12   (49.767)   (49.968)
+Radau   1e-13   (49.792)   (49.965)
+RK45    1e-12   (49.868)   (50.026)
+RK45    1e-13   (49.809)   (49.989)
+LSODA rtol=2e-14 (below the scipy floor 2.22e-14): v* = 1.001  (integration refused: excess accuracy requested)
+
+----- stderr -----
+

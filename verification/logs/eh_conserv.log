@@ -1,0 +1,11 @@
+job eh_conserv  (nabla_a T^a_b for the monopole stress tensor (Eq. consT))
+started 2026-10-21 10:47:03
+wall 0.2 s   cpu 0.1 s   rc 0
+
+### RUN 0  (cwd eh_init)  conserv_num.py
+### rc=0  cpu=0.1s
+----- stdout -----
+brute force: [np.float64(-0.38003589578132335), np.float64(-0.027453028832669854)]  formula: [np.float64(-0.3800358957821573), np.float64(-0.02745302883464798)]
+
+----- stderr -----
+

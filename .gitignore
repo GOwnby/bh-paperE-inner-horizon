@@ -7,3 +7,15 @@
 *.synctex.gz
 __pycache__/
 *.pyc
+# build products and local caches
+*.so
+*.bbl.bak
+K_mu_*.npy
+.wtest
+/main.log
+/main.pdf
+# verification: scratch copy of the code tree used by `verify.sh --full`, temporary files
+verification/regen/
+verification/regen_quick/
+*.tmp_verify
+verification/__pycache__/

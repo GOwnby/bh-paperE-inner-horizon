@@ -1,0 +1,41 @@
+job eh_ray_extend  (kernel-driven extension to v = 3000: q_M(2500) = 5.02 (k = 3/2) and 3.01 (k = 1/2))
+started 2026-10-21 05:06:07
+wall 1878.2 s   cpu 133.5 s   rc 0
+
+### RUN 0  (cwd eh_init)  ray_extend.py gen3_B0.003_k0.5_v300.json
+### rc=0  cpu=66.2s
+----- stdout -----
+gen3_B0.003_k0.5_v300.json k=0.5 B=0.003: levels diff at v0=60: y 2.4e-10 rho 4.2e-08 M 1.7e-08 ; M_ext(v0)=3.317e+00
+excess |sV|-km at v_b=1.3e-05, fitted power q=1.48
+PDE/kernel phi_v ratio at v_b: 1.00032 (kernel built for the linear regime; B=0.003)
+
+    v      ln M      rate        q_M=(km-rate)(v+1)   C(v)=lnM-km v+(2k+2)ln(v+1)    d(lnM) mode zero/const vs power
+    290    177.986  0.7847781   3.1454               -35.7141                      -4.5e-04 +5.1e-05
+    400    264.502  0.7878745   3.0927               -35.7513                      -1.4e-03 +5.7e-04
+    600    422.376  0.7905005   3.0570               -35.7809                      -2.3e-03 +2.2e-03
+   1000    739.058  0.7925579   3.0321               -35.8030                      -3.3e-03 +6.4e-03
+   1500   1135.625  0.7935746   3.0206               -35.8135                      -3.9e-03 +1.2e-02
+   2000   1532.551  0.7940803   3.0150               -35.8186                      -4.3e-03 +1.8e-02
+   2500   1929.673  0.7943828   3.0117               -35.8216                      -4.6e-03 +2.5e-02
+
+----- stderr -----
+
+
+### RUN 1  (cwd eh_init)  ray_extend.py gen3_B0.003_k1.5_v300.json
+### rc=0  cpu=67.3s
+----- stdout -----
+gen3_B0.003_k1.5_v300.json k=1.5 B=0.003: levels diff at v0=60: y 6.4e-10 rho 1.1e-06 M 4.2e-07 ; M_ext(v0)=8.475e-01
+excess |sV|-km at v_b=7.8e-08, fitted power q=4.41
+PDE/kernel phi_v ratio at v_b: 1.00030 (kernel built for the linear regime; B=0.003)
+
+    v      ln M      rate        q_M=(km-rate)(v+1)   C(v)=lnM-km v+(2k+2)ln(v+1)    d(lnM) mode zero/const vs power
+    290    168.287  0.7766127   5.5092               -34.0540                      -2.2e-06 +8.1e-07
+    400    254.104  0.7826386   5.1753               -34.1440                      -4.6e-06 +7.1e-06
+    600    411.136  0.7870539   5.1029               -34.1983                      -5.5e-06 +2.2e-05
+   1000    726.763  0.7904920   5.0577               -34.2380                      -5.7e-06 +5.3e-05
+   1500   1122.491  0.7921887   5.0372               -34.2569                      -5.7e-06 +9.2e-05
+   2000   1518.816  0.7930322   5.0275               -34.2662                      -5.8e-06 +1.3e-04
+   2500   1915.468  0.7935368   5.0216               -34.2717                      -5.8e-06 +1.7e-04
+
+----- stderr -----
+

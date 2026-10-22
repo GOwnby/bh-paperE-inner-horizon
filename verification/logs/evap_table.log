@@ -1,0 +1,37 @@
+job evap_table  (Table evap and the M_i = 2 l values of Sec. 5)
+started 2026-10-21 04:05:37
+wall 98.1 s   cpu 14.8 s   rc 0
+
+### RUN 0  (cwd .)  evap_table.py
+### rc=0  cpu=14.8s
+----- stdout -----
+       5      0.1   2.7211e+06   1.7899e+06   14319.3
+       5     0.01   3.7156e+06   1.8795e+06   15036.0
+       5    0.001   1.0562e+07   2.0462e+06   16369.6
+       5   0.0001   7.2635e+07   2.5011e+06   20008.7
+       5    1e-05   6.7554e+08   3.8766e+06   31013.0
+       5    1e-06   6.6504e+09   8.1662e+06   65329.5
+      20      0.1   1.3124e+08   1.2101e+08   15126.8
+      20     0.01   1.3224e+08   1.2110e+08   15138.0
+      20    0.001   1.3908e+08   1.2127e+08   15158.9
+      20   0.0001   2.0115e+08   1.2173e+08   15215.7
+      20    1e-05   8.0406e+08   1.2310e+08   15387.7
+      20    1e-06   6.7789e+09   1.2739e+08   15923.9
+    1000      0.1   1.6085e+13   1.6061e+13   16060.9
+    1000     0.01   1.6085e+13   1.6061e+13   16060.9
+    1000    0.001   1.6085e+13   1.6061e+13   16060.9
+    1000   0.0001   1.6085e+13   1.6061e+13   16060.9
+    1000    1e-05   1.6086e+13   1.6061e+13   16060.9
+    1000    1e-06   1.6092e+13   1.6061e+13   16060.9
+Lambda*sqrt(eps_f) 0.0001 8288.814187253194
+Lambda*sqrt(eps_f) 1e-06 6493.98055889379
+Lambda*sqrt(eps_f) 1e-08 6264.745109447393
+
+----- stderr -----
+/tmp/claude-0/-home-claude/717c308b-4c66-5933-99e1-d42d1016a975/scratchpad/Ework/Q2/code/evap_coupling.py:46: IntegrationWarning: The integral is probably divergent, or slowly convergent.
+  u=quad(lambda M:1/P(M),Mf,Mi,limit=800,epsabs=0,epsrel=1e-9)[0]
+/tmp/claude-0/-home-claude/717c308b-4c66-5933-99e1-d42d1016a975/scratchpad/Ework/Q2/code/evap_table.py:10: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  return sum(quad(g,xs[i],xs[i+1],epsabs=0,epsrel=1e-11,limit=200)[0] for i in range(len(xs)-1))
+

@@ -1,0 +1,11 @@
+job nl_figure  (Fig. nl)
+started 2026-10-21 04:44:44
+wall 90.1 s   cpu 7.4 s   rc 0
+
+### RUN 0  (cwd nonlinear)  make_fig_nonlinear.py
+### rc=0  cpu=7.4s
+----- stdout -----
+saved
+
+----- stderr -----
+

@@ -1,4 +1,5 @@
-"""Curvature along the Cauchy horizon (Kretschmann scalar).  Checks the invariant code against the analytic static Hayward K and
+"""[Modified relative to the original: the v = 20 row and the static K at (u=2, v=20) were added to the output after the original run; every other number of the output is bit-identical to the original run. See PROVENANCE.md.]
+Curvature along the Cauchy horizon (Kretschmann scalar).  Checks the invariant code against the analytic static Hayward K and
 measures the growth of K at u = 2 for A = 0.02, B = 0.002.  Writes curvature_nonlinear.json."""
 import numpy as np, json, warnings
 warnings.filterwarnings('ignore')
@@ -15,11 +16,12 @@ for h in (0.08,0.04):
     for (uu,vv) in [(0,10),(0,20),(-3,5),(3,25)]:
         i=int(round((uu+6)/h)); j=int(round(vv/h)); r=a0[0][j,i]; e.append(float(abs(K0[j,i]-fK(r))/fK(r)))
     out['static_rel_err'].append([h,e])
+    out.setdefault('static_K_u2_v20',[]).append([h,float(K0[int(round(20/h)),int(round(8/h))])])   # static value quoted next to K(u=2,v=20)
 out['K']={}
 for h in (0.04,0.02):
     u,v,arrs,_=build2(bg,-6,8,0,100,h,h,0.02,0.002); run2(bg,arrs,h,h); M,T1,T2,T3,K=invariants(bg,arrs)
     R,SG,RU,RV,SU,SV,PU,PV=arrs; W=np.exp(SG); i=int(round(8/h)); rows=[]
-    for vv in (40,60,80,100):
+    for vv in (20,40,60,80,100):
         j=int(round(vv/h)); rows.append({'v':vv,'|M|':float(abs(M[j,i])),'K':float(K[j,i]),'T1':float(T1[j,i]),'T2':float(T2[j,i]),'T3':float(T3[j,i]),
           'K/(phi_u phi_v/W)^2':float(K[j,i]/((PU[j,i]*PV[j,i]/W[j,i])**2)),'phi_u':float(PU[j,i]),'phi_v':float(PV[j,i])})
     k=int(round(1/h)); lk=np.log(abs(K[:,i]))

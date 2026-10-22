@@ -1,0 +1,19 @@
+job nl_kappa_fixedL  (fixed-domain control of the kappa_- scan)
+started 2026-10-21 04:22:28
+wall 1276.7 s   cpu 101.2 s   rc 0
+
+### RUN 0  (cwd nonlinear)  run_kappa_fixedL.py 5
+### rc=0  cpu=65.7s
+----- stdout -----
+m_N=5 kappa_-=0.7956 fixed L=30 h=0.1: A*=0.020442  local exponents (A*-A = (A*/0.02) 1e-11 ... 1e-5): [0.489 0.492 0.497 0.499 0.499 0.499 0.499 0.498 0.496 0.493 0.487 0.476 0.468]
+
+----- stderr -----
+
+
+### RUN 1  (cwd nonlinear)  run_kappa_fixedL.py 1.4
+### rc=0  cpu=35.5s
+----- stdout -----
+m_N=1.4 kappa_-=0.1640 fixed L=30 h=0.1: A*=0.0502846  local exponents (A*-A = (A*/0.02) 1e-11 ... 1e-5): [ 4.0800e+00  1.3972e+01  1.4882e+01 -3.4170e+00 -5.0000e-03  3.7000e-01  1.9700e-01  1.8900e-01  2.1700e-01  2.4300e-01  2.5000e-01]
+
+----- stderr -----
+

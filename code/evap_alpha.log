@@ -1,0 +1,6 @@
+eps= 1.0e-04  P/eps^2 = 1.911491e-04   kappa_-/sqrt(eps) = 0.476515
+eps= 1.0e-05  P/eps^2 = 1.947973e-04   kappa_-/sqrt(eps) = 0.473025
+eps= 1.0e-06  P/eps^2 = 1.959529e-04   kappa_-/sqrt(eps) = 0.471918
+eps= 1.0e-07  P/eps^2 = 1.963185e-04   kappa_-/sqrt(eps) = 0.471567
+eps= 1.0e-08  P/eps^2 = 1.964341e-04   kappa_-/sqrt(eps) = 0.471456
+c0 = lim P/eps^2 = 1.96488e-04   alpha = c0/M* = 1.5126e-04   2 sqrt(2)/(3 alpha) = 6233.2

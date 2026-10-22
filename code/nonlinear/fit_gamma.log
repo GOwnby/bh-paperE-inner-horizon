@@ -1,0 +1,15 @@
+h=0.08  A*=0.0204360044  (36 distances)
+  window [1e-10,1e-09] (6 points): gamma = 0.4997
+  window [1e-10,1e-07] (16 points): gamma = 0.4991
+  window [1e-10,1e-06] (21 points): gamma = 0.4979
+  prefactor r_inf/sqrt(d) at d=1e-10: 40.77
+h=0.04  A*=0.0204279866  (36 distances)
+  window [1e-10,1e-09] (6 points): gamma = 0.4997
+  window [1e-10,1e-07] (16 points): gamma = 0.4990
+  window [1e-10,1e-06] (21 points): gamma = 0.4978
+  prefactor r_inf/sqrt(d) at d=1e-10: 41.21
+h=0.02  A*=0.0204259767  (36 distances)
+  window [1e-10,1e-09] (6 points): gamma = 0.4997
+  window [1e-10,1e-07] (16 points): gamma = 0.4990
+  window [1e-10,1e-06] (21 points): gamma = 0.4978
+  prefactor r_inf/sqrt(d) at d=1e-10: 41.32

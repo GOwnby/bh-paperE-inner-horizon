@@ -1,12 +1,18 @@
 cff-version: 1.2.0
 message: "If you use this software or manuscript, please cite it as below."
 title: "Inner-Horizon Stability of the Hayward Metric: Closure Classes in the Ori Model, the Evaporation Clock and a Nonlinear Double-Null Test"
-abstract: "LaTeX source, compiled PDF, generalized Ori thin-shell model, and double-null Einstein-NED-scalar evolution code for Paper E."
+abstract: "Does the inner (Cauchy) horizon of a regular Hayward black hole survive perturbation, or does mass inflation destroy it? In the Ori thin-null-shell model, reconstructed for an arbitrary closure M(m,r) and checked against Reissner-Nordstrom, the family a(m) ~ m^(1+s) has three regimes: unbounded exponential growth for -1 <= s < 0; for the fixed-length closure s = 0, exponential growth followed by M_+ ~ v^(p+1), but only because the Moebius map is continued through m = infinity; and for s > 0 a fold that ends the model at finite advanced time. With the evaporation law of Paper A the integrated inner-horizon exponent of a 10 solar-mass hole with l = l_P is about 10^121 e-folds and diverges near the critical mass. In a nonlinear double-null evolution of the Einstein-NED-massless-scalar system with the additive closure M = mu + M_N(r), the Cauchy-horizon radius stays finite below a critical amplitude while the Misner-Sharp mass inflates; at the threshold the radius vanishes as (A_* - A)^gamma with gamma = 0.4997 +- 0.002. The sign of the inflating mass is that of -r_u, and the conformal-anomaly term of the Hawking flux, added along a ray, reverses it. The Kretschmann scalar obeys K >= 16 M^2/r^6, which diverges along the rays computed to v = 280. The closure of the nonlinear test is not the mass-tracking closure of the series, and extendibility is addressed by indicators only. The archive contains the LaTeX source, the compiled PDF, and the Python and C code, logs and stored data that reproduce every table, number and figure."
 authors:
   - family-names: "Ownby"
     given-names: "Gracen"
-version: "v1.0.1"
-doi: "10.5281/zenodo.23455588"
-date-released: "2026-10-18"
-url: "https://doi.org/10.5281/zenodo.23455588"
-license: "CC-BY-4.0"
+version: "1.1.0"
+doi: "10.5281/zenodo.23455587"
+date-released: "2026-10-20"
+url: "https://doi.org/10.5281/zenodo.23455587"
+license: "CC-BY-4.0"   # manuscript, figures, data; code is MIT (see LICENSE.md)
+keywords:
+  - regular black holes
+  - Hayward metric
+  - mass inflation
+  - inner horizon
+  - double-null evolution

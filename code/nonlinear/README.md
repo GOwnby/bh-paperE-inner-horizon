@@ -3,9 +3,10 @@
 Einstein + NED monopole (Hayward profile, additive closure M = mu + M_N(r)) + massless scalar, spherical symmetry.
 Equations, scheme, initial data and validation are in `main.tex`, Section 6; module docstring of `dn2lib.py` repeats them.
 
+`bash ../../verify.sh` runs the cheap scripts below, analyses the stored output of the long ones (`analyze_stored.py`) and compares ~600 numbers with `main.tex`; `bash ../../verify.sh --full` also regenerates the long ones in a scratch copy.
 Run all scripts from this directory (they write cwd-relative files; `make_fig_nonlinear.py` writes `../../fig_nonlinear.png`).
-Build (once):  `gcc -O3 -shared -fPIC -o libdouble_null.so double_null.c -lm`
-Requires numpy, scipy, matplotlib.  Parameters: m_N = 5, a_N = 10 (ell^2 = a_N/2 m_N = 1).
+Build (once):  `make` in `..` (or by hand `gcc -O3 -shared -fPIC -o libdouble_null.so double_null.c -lm`).
+Requires numpy (>= 2.0), scipy, matplotlib (`../../requirements.txt`).  Parameters: m_N = 5, a_N = 10 (ell^2 = a_N/2 m_N = 1).
 
 | script | what it produces | wall time (1 core) |
 |---|---|---|
@@ -16,8 +17,12 @@ Requires numpy, scipy, matplotlib.  Parameters: m_N = 5, a_N = 10 (ell^2 = a_N/2
 | `run_supercritical.py` | locus r = const above threshold -> `supercritical_nonlinear.json` | ~2 min |
 | `run_universality.py` | Ori exponent q = 2k+2 for tails (1+v)^-k; critical exponent for other data families -> `universality_nonlinear.json` | ~10 min |
 | `run_checks.py` | A_* independent of v1; saturation of r in v; rates near threshold (A_*-A down to 1e-10) and at the outer edge; sign change of M in u; Raychaudhuri residual in the v direction -> `checks_nonlinear.json` | ~6 min |
-| `run_curvature.py` | Kretschmann scalar on the Cauchy horizon, static check, K = 2048 pi^2 (phi_u phi_v/W)^2, affine length, other tails/amplitudes -> `curvature_nonlinear.json` | ~2 min |
+| `run_curvature.py` | Kretschmann scalar on the Cauchy horizon (rows v = 20, 40, ..., 100), static check and static value at (u = 2, v = 20), K = 2048 pi^2 (phi_u phi_v/W)^2, affine length, other tails/amplitudes -> `curvature_nonlinear.json`, `curv.log` | 20-40 s |
+| `fit_gamma.py` | threshold exponent gamma (three fit windows) and prefactor from `threshold_h*.json` -> `fit_gamma.log` | 1 s |
+| `analyze_stored.py` | re-derives every number of Secs. 6.1-6.5 that comes from a long run (rates, threshold, domain, universality, supercritical locus, kappa scan, sign mechanism, curvature) from the stored `*.json`/`*.log` files -> `analyze_stored.json/.log` | 1 s |
+| `check_saturation.py` | saturation of r_CH(u) at A_*-A = 1e-10: r_CH(40) vs r_CH(50) and r_CH(30) vs r_CH(40) (needs `threshold_h0.04.json`) -> `check_saturation.log/.json` | ~30 s |
 | `run_kappa_scan.py m_N [h]` | dependence on kappa_-: m_N = 5, 3, 2, 1.6, 1.4 (a_N = 2 m_N); threshold exponent and rate -> `kscan_mN<m_N>.json` | 2-8 min each |
+| `run_kappa_fixedL.py m_N [L] [h]` | control of the kappa_- scan with a fixed domain u1 = v1 = L (default 30): spurious exponents for m_N = 1.4, fine for m_N = 5 -> `results_kappa_fixedL.txt` | 1-2 min each |
 | `make_fig_nonlinear.py` | `../../fig_nonlinear.png` | ~1 min |
 
 Notes
@@ -30,6 +35,7 @@ Notes
 * The second-order diamond scheme in `double_null.c` is the standard double-null idea (Gundlach-Price-Pullin 1994, bibliographic
   record only checked) with the first derivatives r_u, r_v, sigma_u, sigma_v, phi_u, phi_v as independent evolved variables.
 * The event-horizon-regular set-up of Section 'Data regular on the event horizon' is in ../eh_init/ (own README).
-* `sign_scan.py` (-> `sign_scan.log`): monotonicity of r_u/W in u (Raychaudhuri: d_v(r_u/W) = -4 pi r phi_u^2/W <= 0 along u) tested on 17 (A, B, h) combinations of the stored runs, NaN columns masked; hence r_u, and with it the sign of the inflating mass, changes sign at most once in u. The apparent irregular pattern at the smallest amplitude is a truncation violation of the monotonicity, not a second sign change. u* (the position of the change) is tabulated in the log; what fixes it from the data is not derived.
+* `sign_scan.py` (-> `sign_scan.log`): monotonicity of r_u/W in u (Raychaudhuri: d_u(r_u/W) = -4 pi r phi_u^2/W <= 0 along u) tested on 17 (A, B, h) combinations of the stored runs, NaN columns masked; hence r_u, and with it the sign of the inflating mass, changes sign at most once in u. The apparent irregular pattern at the smallest amplitude is a truncation violation of the monotonicity, not a second sign change. u* (the position of the change) is tabulated in the log; what fixes it from the data is not derived.
 * `sign_ustar.py` (-> `sign_ustar.log`): u_*(v), the zero of r_u on the slices v = 10..100 for three (A, B) at h = 0.04. u_* stops moving for v >= 30 (-1.8790, -1.1565, -1.5430 to the printed digits). The check of the u-Raychaudhuri identity across the slice printed in the log is cancellation-limited at this resolution (relative mismatch O(1)) and is not used.
 * `sign_separatrix.py` (-> `sign_separatrix.log`): the ray equation y' = a y + S is linear in y; y_sep(v0) = -int S/Phi dv is computed from the evolved ray fields, and the zero of y(v0,u) - y_sep(v0,u) lies at u_* for v0 = 30, 40, 50 (y_sep = 0.4990, 0.4715, 0.4998). Because y(v0,u) is extremely steep in u (|dy/du| > 1e4) this shows that the sign is decided by v ~ 30, not how u_* follows from A, B.
+* Provenance: `run_curvature.py` differs from the original only by two additional output rows (v = 20 and the static K at u = 2, v = 20); `fit_gamma.py`, `analyze_stored.py`, `check_saturation.py` and `run_kappa_fixedL.py` were written after the original work (see `../../PROVENANCE.md`). `threshold_h0.08.json`, `validation_nonlinear.json`, `sign_mech.log` are the original outputs; a regeneration on another platform differs at the 1e-6 level (near-threshold scan) or 1e-9.

@@ -1,0 +1,15 @@
+job eh_kernel_smoothing  (sensitivity of the PDE/kernel flux ratio to the Gaussian window)
+started 2026-10-21 04:46:22
+wall 60.6 s   cpu 4.5 s   rc 0
+
+### RUN 0  (cwd eh_init)  kernel_smoothing_test.py
+### rc=0  cpu=4.5s
+----- stdout -----
+ratio PDE/kernel for the smoothing variance s2 (s2 = 0.5 is the value used in kernel_lib.py)
+s2 = 0.00   v = 60, 100, 200, 290: ['0.93181', '0.88552', '1.00033', '1.00024']
+s2 = 0.25   v = 60, 100, 200, 290: ['0.99918', '0.99860', '1.00034', '1.00031']
+s2 = 0.50   v = 60, 100, 200, 290: ['0.99964', '0.99979', '1.00031', '1.00030']
+s2 = 1.00   v = 60, 100, 200, 290: ['0.99896', '0.99925', '1.00027', '1.00027']
+
+----- stderr -----
+

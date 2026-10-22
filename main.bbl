@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -8,8 +8,11 @@
 \bibitem[Barcel\'o et~al.(2022)Barcel\'o, Boyanov, Carballo-Rubio, and
   Garay]{Barcelo2022}
 Carlos Barcel\'o, Valentin Boyanov, Ra\'ul Carballo-Rubio, and Luis~J. Garay.
-\newblock Classical mass inflation vs semiclassical inner horizon inflation.
-\newblock \emph{Phys. Rev. D}, 106:\penalty0 124006, 2022.
+\newblock Classical mass inflation versus semiclassical inner horizon
+  inflation.
+\newblock \emph{Physical Review D}, 106\penalty0 (12):\penalty0 124006, 2022.
+\newblock \doi{10.1103/PhysRevD.106.124006}.
+\newblock arXiv:2203.13539.
 
 \bibitem[Barrab{\`e}s and Israel(1991)]{BarrabesIsrael1991}
 Claude Barrab{\`e}s and Werner Israel.
@@ -21,21 +24,28 @@ Claude Barrab{\`e}s and Werner Israel.
 Alfio Bonanno, Amir-Pouyan Khosravi, and Frank Saueressig.
 \newblock Regular black holes with stable cores.
 \newblock \emph{Physical Review D}, 103:\penalty0 124027, 2021.
+\newblock \doi{10.1103/PhysRevD.103.124027}.
+\newblock arXiv:2010.04226.
 
 \bibitem[Bonanno et~al.(2023)Bonanno, Khosravi, and Saueressig]{Bonanno2023}
 Alfio Bonanno, Amir-Pouyan Khosravi, and Frank Saueressig.
 \newblock Regular evaporating black holes with stable cores.
-\newblock \emph{Physical Review D}, 107:\penalty0 024005, 2023.
+\newblock \emph{Physical Review D}, 107\penalty0 (2):\penalty0 024005, 2023.
+\newblock \doi{10.1103/PhysRevD.107.024005}.
+\newblock arXiv:2209.10612.
 
 \bibitem[Borissova and Carballo-Rubio(2026)]{BorissovaCarballoRubio2026}
 Johanna Borissova and Ra\'ul Carballo-Rubio.
 \newblock Regular black holes from pure gravity in four dimensions.
-\newblock \emph{arXiv:2602.16773 [gr-qc]}, 2026.
+\newblock \emph{Physical Review D}, 113\penalty0 (12):\penalty0 124004, 2026.
+\newblock \doi{10.1103/6x2z-qbkh}.
+\newblock arXiv:2602.16773.
 
-\bibitem[Bueno et~al.(2024)Bueno, Cano, and Hennigar]{BuenoCanoHennigar2024}
+\bibitem[Bueno et~al.(2025)Bueno, Cano, and Hennigar]{BuenoCanoHennigar2024}
 Pablo Bueno, Pablo~A. Cano, and Robie~A. Hennigar.
 \newblock Regular black holes from pure gravity.
-\newblock \emph{arXiv:2403.04827 [gr-qc]}, 2024.
+\newblock \emph{Physics Letters B}, 861:\penalty0 139260, 2025.
+\newblock \doi{10.1016/j.physletb.2025.139260}.
 
 \bibitem[Carballo-Rubio et~al.(2018)Carballo-Rubio, Di~Filippo, Liberati,
   Pacilio, and Visser]{CarballoRubio2018}
@@ -44,15 +54,19 @@ Ra{\'u}l Carballo-Rubio, Francesco Di~Filippo, Stefano Liberati, Costantino
 \newblock On the viability of regular black holes.
 \newblock \emph{Journal of High Energy Physics}, 2018\penalty0 (7):\penalty0
   023, 2018.
+\newblock \doi{10.1007/JHEP07(2018)023}.
+\newblock arXiv:1805.02675.
 
 \bibitem[Carballo-Rubio et~al.(2021)Carballo-Rubio, Di~Filippo, Liberati,
   Pacilio, and Visser]{CarballoRubio2021}
-Ra\'ul Carballo-Rubio, Francesco Di~Filippo, Stefano Liberati, Costantino
+Ra{\'u}l Carballo-Rubio, Francesco Di~Filippo, Stefano Liberati, Costantino
   Pacilio, and Matt Visser.
 \newblock Inner horizon instability and the unstable cores of regular black
   holes.
 \newblock \emph{Journal of High Energy Physics}, 2021\penalty0 (5):\penalty0
   132, 2021.
+\newblock \doi{10.1007/JHEP05(2021)132}.
+\newblock arXiv:2101.05006.
 
 \bibitem[Carballo-Rubio et~al.(2022)Carballo-Rubio, Di~Filippo, Liberati,
   Pacilio, and Visser]{CarballoRubio2022b}
@@ -61,53 +75,72 @@ Ra\'ul Carballo-Rubio, Francesco Di~Filippo, Stefano Liberati, Costantino
 \newblock Regular black holes without mass inflation instability.
 \newblock \emph{Journal of High Energy Physics}, 2022\penalty0 (9):\penalty0
   118, 2022.
+\newblock \doi{10.1007/JHEP09(2022)118}.
+\newblock arXiv:2205.13556.
+
+\bibitem[Carballo-Rubio et~al.(2023)Carballo-Rubio, Di~Filippo, Liberati,
+  Pacilio, and Visser]{CarballoRubio2023Comment}
+Ra\'ul Carballo-Rubio, Francesco Di~Filippo, Stefano Liberati, Costantino
+  Pacilio, and Matt Visser.
+\newblock Comment on ``{R}egular evaporating black holes with stable cores''.
+\newblock \emph{Physical Review D}, 108\penalty0 (12):\penalty0 128501, 2023.
+\newblock \doi{10.1103/PhysRevD.108.128501}.
 
 \bibitem[Costa and Franzen(2017)]{CostaFranzen2017}
 Jo{\~a}o~L. Costa and Anne~T. Franzen.
 \newblock Bounded energy waves on the black hole interior of
   {R}eissner--{N}ordstr{\"o}m--de {S}itter.
-\newblock \emph{Annales Henri Poincar{\'e}}, 2017.
+\newblock \emph{Annales Henri Poincar{\'e}}, 18\penalty0 (10):\penalty0
+  3371--3398, 2017.
+\newblock \doi{10.1007/s00023-017-0592-z}.
+\newblock arXiv:1607.01018.
 
 \bibitem[Dafermos(2005)]{Dafermos2005}
 Mihalis Dafermos.
 \newblock The interior of charged black holes and the problem of uniqueness in
   general relativity.
-\newblock \emph{Communications on Pure and Applied Mathematics}, 58:\penalty0
-  445, 2005.
+\newblock \emph{Communications on Pure and Applied Mathematics}, 58\penalty0
+  (4):\penalty0 445--504, 2005.
+\newblock \doi{10.1002/cpa.20071}.
+\newblock arXiv:gr-qc/0307013.
 
 \bibitem[Dray and 't~Hooft(1985)]{DrayTHooft1985}
 Tevian Dray and Gerard 't~Hooft.
 \newblock The effect of spherical shells of matter on the {S}chwarzschild black
   hole.
-\newblock \emph{Communications in Mathematical Physics}, 99:\penalty0 613,
-  1985.
+\newblock \emph{Communications in Mathematical Physics}, 99\penalty0
+  (4):\penalty0 613--625, 1985.
 \newblock \doi{10.1007/BF01215912}.
 
-\bibitem[Eichhorn and Fernandes(2025)]{EichhornFernandes2025}
+\bibitem[Eichhorn and Fernandes(2026)]{EichhornFernandes2025}
 Astrid Eichhorn and Pedro G.~S. Fernandes.
 \newblock Regular black holes without mass-inflation instability and gravastars
-  from modified gravity, 2025.
-\newblock arXiv:2508.00686 (v2, March 2026).
+  from modified gravity.
+\newblock \emph{Physical Review D}, 113\penalty0 (8):\penalty0 L081501, 2026.
+\newblock \doi{10.1103/nqz2-88zf}.
 
 \bibitem[Frolov and Zelnikov(2026)]{FrolovZelnikov2026}
 Valeri~P. Frolov and Andrei Zelnikov.
 \newblock Regular black holes in quasitopological gravity: Null shells and mass
-  inflation, 2026.
-\newblock arXiv:2601.01861 (v2, April 2026).
+  inflation.
+\newblock \emph{Physical Review D}, 113\penalty0 (8):\penalty0 084007, 2026.
+\newblock \doi{10.1103/nrd7-j6hs}.
 
 \bibitem[Gundlach et~al.(1994)Gundlach, Price, and
   Pullin]{GundlachPricePullin1994}
 Carsten Gundlach, Richard~H. Price, and Jorge Pullin.
 \newblock Late-time behavior of stellar collapse and explosions. {II}.
-  nonlinear evolution.
-\newblock \emph{Physical Review D}, 49:\penalty0 890, 1994.
+  {N}onlinear evolution.
+\newblock \emph{Physical Review D}, 49\penalty0 (2):\penalty0 890--899, 1994.
+\newblock \doi{10.1103/PhysRevD.49.890}.
 
 \bibitem[Hamilton and Avelino(2010)]{HamiltonAvelino2010}
 Andrew J.~S. Hamilton and Pedro~P. Avelino.
 \newblock The physics of the relativistic counter-streaming instability that
   drives mass inflation inside black holes.
-\newblock \emph{Physics Reports}, 495:\penalty0 1, 2010.
+\newblock \emph{Physics Reports}, 495:\penalty0 1--32, 2010.
 \newblock \doi{10.1016/j.physrep.2010.06.002}.
+\newblock arXiv:0811.1926.
 
 \bibitem[Hawking(1975)]{Hawking1975}
 Stephen~W. Hawking.
@@ -120,43 +153,49 @@ Sean~A. Hayward.
 \newblock Formation and evaporation of nonsingular black holes.
 \newblock \emph{Physical Review Letters}, 96:\penalty0 031103, 2006.
 \newblock \doi{10.1103/PhysRevLett.96.031103}.
+\newblock arXiv:gr-qc/0506126.
 
 \bibitem[Hintz and Vasy(2017)]{HintzVasy2017}
 Peter Hintz and Andr{\'a}s Vasy.
 \newblock Analysis of linear waves near the {C}auchy horizon of cosmological
   black holes.
-\newblock \emph{Journal of Mathematical Physics}, 2017.
+\newblock \emph{Journal of Mathematical Physics}, 58\penalty0 (8):\penalty0
+  081509, 2017.
+\newblock \doi{10.1063/1.4996575}.
+\newblock arXiv:1512.08004.
 
 \bibitem[Kehle and Shlapentokh-Rothman(2019)]{KehleShlapentokhRothman2019}
 Christoph Kehle and Yakov Shlapentokh-Rothman.
 \newblock A scattering theory for linear waves on the interior of
   {R}eissner--{N}ordstr{\"o}m black holes.
-\newblock \emph{Annales Henri Poincar\'e}, 20, 2019.
-\newblock arXiv:1804.05438, doi:10.1007/s00023-019-00760-z.
+\newblock \emph{Annales Henri Poincar\'e}, 20\penalty0 (5):\penalty0
+  1583--1650, 2019.
+\newblock \doi{10.1007/s00023-019-00760-z}.
+\newblock arXiv:1804.05438.
 
 \bibitem[Khodadi and Firouzjaee(2024)]{KhodadiFirouzjaee2024}
 Mohsen Khodadi and Javad~T. Firouzjaee.
-\newblock A note on the stability of the cauchy horizon in regular black holes
-  without mass inflation.
-\newblock \emph{Physics Letters B}, page 138986, 2024.
+\newblock A note on the stability of the {C}auchy horizon in regular black
+  holes without mass inflation.
+\newblock \emph{Physics Letters B}, 857:\penalty0 138986, 2024.
+\newblock \doi{10.1016/j.physletb.2024.138986}.
+\newblock arXiv:2408.12873.
 
 \bibitem[Lanir et~al.(2019)Lanir, Ori, Zilberman, Sela, Maline, and
   Levi]{Lanir2019}
 Assaf Lanir, Amos Ori, Noa Zilberman, Orr Sela, Ahron Maline, and Adam Levi.
 \newblock Analysis of quantum effects inside spherical charged black holes.
-\newblock \emph{Phys. Rev. D}, 99:\penalty0 061502, 2019.
+\newblock \emph{Physical Review D}, 99:\penalty0 061502(R), 2019.
+\newblock \doi{10.1103/PhysRevD.99.061502}.
+\newblock arXiv:1811.03672.
 
 \bibitem[Luk and Oh(2017)]{LukOh2017}
 Jonathan Luk and Sung-Jin Oh.
 \newblock Proof of linear instability of the {R}eissner--{N}ordstr{\"o}m
   {C}auchy horizon under scalar perturbations.
-\newblock \emph{Duke Mathematical Journal}, 166:\penalty0 437, 2017.
-
-\bibitem[Marolf and Ori(2012)]{MarolfOri2012}
-Donald Marolf and Amos Ori.
-\newblock Outgoing gravitational shock-wave at the inner horizon: The late-time
-  limit of black hole interiors.
-\newblock \emph{Physical Review D}, 86:\penalty0 124026, 2012.
+\newblock \emph{Duke Mathematical Journal}, 166\penalty0 (3):\penalty0
+  437--493, 2017.
+\newblock \doi{10.1215/00127094-3715189}.
 
 \bibitem[Misner and Sharp(1964)]{MisnerSharp1964}
 Charles~W. Misner and David~H. Sharp.
@@ -175,34 +214,54 @@ Amos Ori.
 Amos Ori.
 \newblock Transmission and reflection coefficients for a scalar field inside a
   charged black hole.
-\newblock \emph{Physical Review D}, 57:\penalty0 2621, 1998.
+\newblock \emph{Physical Review D}, 57\penalty0 (4):\penalty0 2621--2623, 1998.
+\newblock \doi{10.1103/PhysRevD.57.2621}.
 \newblock arXiv:gr-qc/9711034.
 
 \bibitem[Ownby(2026{\natexlab{a}})]{PaperA}
 Gracen Ownby.
-\newblock Evaporation toward a degenerate horizon: islands, asymptotics and the
-  horizonless branch of the hayward black hole (paper a of this series),
+\newblock {Evaporation Toward a Degenerate Horizon: Islands, Asymptotics and
+  the Horizonless Branch of the Hayward Black Hole}.
+\newblock Zenodo, \url{https://doi.org/10.5281/zenodo.23455575},
   2026{\natexlab{a}}.
-\newblock accompanying manuscript.
 
 \bibitem[Ownby(2026{\natexlab{b}})]{PaperB}
 Gracen Ownby.
-\newblock Matter-sourced regular cores in general relativity: dynamical and
-  field-theoretic obstructions (paper b of this series), 2026{\natexlab{b}}.
-\newblock accompanying manuscript.
+\newblock {Matter-Sourced Regular Cores in General Relativity: Dynamical and
+  Field-Theoretic Obstructions}.
+\newblock Zenodo, \url{https://doi.org/10.5281/zenodo.23455579},
+  2026{\natexlab{b}}.
 
-\bibitem[Ownby(2026{\natexlab{c}})]{PaperD}
+\bibitem[Ownby(2026{\natexlab{c}})]{PaperC}
 Gracen Ownby.
-\newblock Where the collapse ends: bounce, the neutron-star branch and the
-  black-hole threshold (paper d of this series), 2026{\natexlab{c}}.
-\newblock accompanying manuscript.
+\newblock {Delayed Collapse of a Degenerate Core at Its Maximum Mass:
+  General-Relativistic Instability and the Fold-Passage Law}.
+\newblock Zenodo, \url{https://doi.org/10.5281/zenodo.23455581},
+  2026{\natexlab{c}}.
 
-\bibitem[Ownby(2026{\natexlab{d}})]{PaperG}
+\bibitem[Ownby(2026{\natexlab{d}})]{PaperD}
 Gracen Ownby.
-\newblock Late-time mass inflation in double-null evolutions:
-  event-horizon-regular data, the interior linear response and exact
-  integration along a ray (paper g of this series), 2026{\natexlab{d}}.
-\newblock accompanying manuscript.
+\newblock {Where the Collapse Ends: Bounce, the Neutron-Star Branch and the
+  Black-Hole Threshold of a Degenerate Core with a Dense-Matter Equation of
+  State}.
+\newblock Zenodo, \url{https://doi.org/10.5281/zenodo.23455585},
+  2026{\natexlab{d}}.
+
+\bibitem[Ownby(2026{\natexlab{e}})]{PaperF}
+Gracen Ownby.
+\newblock {The Mass-Tracking Closure in Four-Dimensional Quasi-Topological
+  Gravity: Double-Null Equations, an Exact Generalized-Mass Law and Evolution
+  from Event-Horizon-Regular Data}.
+\newblock Zenodo, \url{https://doi.org/10.5281/zenodo.23455595},
+  2026{\natexlab{e}}.
+
+\bibitem[Ownby(2026{\natexlab{f}})]{PaperG}
+Gracen Ownby.
+\newblock {Late-Time Mass Inflation in Double-Null Evolutions:
+  Event-Horizon-Regular Data, the Interior Linear Response and Exact
+  Integration Along a Ray}.
+\newblock Zenodo, \url{https://doi.org/10.5281/zenodo.23455605},
+  2026{\natexlab{f}}.
 
 \bibitem[Page(1976)]{Page1976}
 Don~N. Page.
@@ -225,18 +284,24 @@ Eric Poisson and Werner Israel.
 \bibitem[Redmount(1985)]{Redmount1985}
 Ian~H. Redmount.
 \newblock Blue-sheet instability of {S}chwarzschild wormholes.
-\newblock \emph{Progress of Theoretical Physics}, 73:\penalty0 1401, 1985.
+\newblock \emph{Progress of Theoretical Physics}, 73\penalty0 (6):\penalty0
+  1401--1426, 1985.
+\newblock \doi{10.1143/PTP.73.1401}.
 
-\bibitem[Shao et~al.(2025)Shao, Guo, Tian, and Zhang]{ShaoEtAl2025}
+\bibitem[Shao et~al.(2026)Shao, Guo, Tian, and Zhang]{ShaoEtAl2025}
 Caiying Shao, Jun-Qi Guo, Yu~Tian, and Hongbao Zhang.
-\newblock Internal structure of {H}ayward black holes, 2025.
-\newblock arXiv:2511.23165 (v2, June 2026).
+\newblock Internal structure of {H}ayward black holes.
+\newblock \emph{Physical Review D}, 113\penalty0 (12):\penalty0 124040, 2026.
+\newblock \doi{10.1103/qyyr-df8v}.
+\newblock arXiv:2511.23165.
 
-\bibitem[Van~de Moortel(2020)]{VanDeMoortel2020}
+\bibitem[Van~de Moortel(2021)]{VanDeMoortel2020}
 Maxime Van~de Moortel.
 \newblock Mass inflation and the {$C^2$}-inextendibility of spherically
   symmetric charged scalar field dynamical black holes.
-\newblock \emph{Communications in Mathematical Physics}, 2020.
+\newblock \emph{Communications in Mathematical Physics}, 382\penalty0
+  (2):\penalty0 1263--1341, 2021.
 \newblock \doi{10.1007/s00220-020-03923-w}.
+\newblock arXiv:2001.11156.
 
 \end{thebibliography}

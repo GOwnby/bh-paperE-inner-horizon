@@ -1,0 +1,57 @@
+sympy 1.14.0
+CHECK A1: OK  (dM/dr)_m = 3 M a /[r (r^3 + a)]
+CHECK A2: OK  G = (dM/dr)_m = 6 l0^2 M^2 (m/m0)^s / r^4  (Eq. Gfamily)
+CHECK A3: OK  Moebius closure: dM/dm = r^6/(r^3+2 l^2 m)^2 > 0
+CHECK A4: OK  Moebius inverse m = M r^3/(r^3 - 2 l^2 M)
+CHECK A5: OK  m -> infinity at the finite mass M = r^3/(2 l^2); pole at m = -r^3/(2 l^2)
+CHECK A6: OK  G = 6 l^2 M^2 / r^4 for s = 0 (n = 2)
+CHECK A7: OK  s = -1: G = (3 M/r) a/(r^3+a)
+CHECK A8: OK  -1<s<0 at large M: (m/m0)^s = r^3/(2 l0^2 M) in Eq. (Gfamily) gives G = 3M/r
+CHECK A9: OK  dM/dm = r^3 (r^3 - s a(m)) / (r^3 + a)^2 (sign change at a = r^3/s)
+CHECK A10: OK  fold value M_max(r) for s = 1 equals sqrt(m0 r^3/(8 l0^2))
+CHECK A11: OK  fold value M_max(r) for s = 2 equals (2/3)(m0^2 r^3/(4 l0^2))^(1/3)
+CHECK A12: OK  any closure: dr_-/dm = 2 M_m/(1 - 2 M_r), so M_m/(R |dr_-/dm|) = |1 - 2 M_r|/(2R) = |f'(r_-)|/2 = kappa_- (linear drive of Eq. Mode)
+CHECK A13: OK  DTR: f_a f_d = f_c f_b with infinitesimal shell gives dM_+/f_+ = dM_-/f_-
+CHECK A14: OK  at M* = 3 sqrt(3) l/4 the horizon polynomial has the double root r = 4M*/3 = sqrt(3) l (no other M has one)
+CHECK A15: OK  kappa_+- -> (sqrt(2)/3) sqrt(eps)/l near M* (both horizons), eps = (M-M*)/M*: root splitting delta = sqrt(2) l sqrt(eps)
+CHECK A16: OK  numerical value (sqrt 2)/3 = 0.4714
+CHECK A17: OK  m = 10^3 l: kappa_- l = 0.9990 (-> 1), kappa_+ 4m = 0.9999995 (-> 1)  [text: 0.9990, 0.9999995]
+CHECK A18: OK  q_a = 16 M^3/(27 l^2): r^3 - 2 M r^2 + 2 q_a l^2 = (r - 4M/3)^2 (r + 2M/3): degenerate horizon r = 4M/3, kappa = 0
+CHECK B1: OK  P = A kappa_+^4/(960 pi^2) -> 1/(15360 pi M^2) for M >> l (A = 16 pi M^2, kappa_+ = 1/4M)
+CHECK B2: OK  Lambda = int kappa_-/P dM = 5120 pi M^3/l for M >> l (kappa_- = 1/l)
+CHECK B3: OK  5120 pi = 1.6085e4
+CHECK B4: OK  kappa_- = (sqrt2/3) sqrt(eps), eps = 1/(alpha u): Lambda = int kappa_- du = (2 sqrt2/(3 alpha)) eps_f^(-1/2)
+CHECK B5: OK  2 sqrt(2)/(3 alpha) at alpha = 1.5126e-4 is 6233 (text: 6233)
+  [4D curvature computed in 2 s]
+   G_uu - 8 pi T_uu after imposing dn1, dn2 and the constraints: identically 0
+   G_vv - 8 pi T_vv after imposing dn1, dn2 and the constraints: identically 0
+   G_uv - 8 pi T_uv after imposing dn1, dn2 and the constraints: identically 0
+   G_thth - 8 pi T_thth after imposing dn1, dn2 and the constraints: identically 0
+CHECK C1: OK  Einstein equations G_ab = 8 pi T_ab (scalar + NED monopole with p_t = -rho - r rho'/2) for ds^2=-W du dv+r^2 dOmega^2 are equivalent to Eqs. (dn1), (dn2) and the two constraints (all components uu, vv, uv, thth, exact)
+CHECK C2: OK  the check can fail: omitting dn1, dn2 or a constraint leaves G_uv, G_thth, G_uu, G_vv - 8 pi T non-zero
+CHECK C3: OK  Box phi = 0 is Eq. (dn3): phi_uv = -(r_u phi_v + r_v phi_u)/r
+CHECK C4: OK  Misner-Sharp mass: 1 - 2M/r = g^ab r_a r_b with M = (r/2)(1 + 4 r_u r_v/W)
+CHECK C5: OK  Kretschmann scalar: full R_abcd R^abcd = R2^2 + 8 H_AB H^AB/r^2 + 4 (2M/r)^2/r^4, R2 = 4 e^{-sigma} sigma_uv, H_AB = nabla_A nabla_B r (exact, generic jets)
+CHECK C6: OK  H_AB H^AB = (8/W^2)(H_uu H_vv + H_uv^2) with g^{uv} = -2/W
+CHECK C7: OK  nabla_a T^a_u = -rho_u - 2 r_u (rho + p_t)/r and nabla_a T^a_v = -rho_v - 2 r_v (rho + p_t)/r (Eq. consT; theta, phi components vanish)
+CHECK C8: OK  both components vanish => r_v rho_u - r_u rho_v = 0 (d rho ^ d r = 0): rho = rho(r) where dr != 0
+CHECK C9: OK  with rho = rho(r): p_t = -rho - r rho'/2 (static relation)
+CHECK C10: OK  ray equation (ln y)' = rho/r - sigma_v + S(r)/y with y = -r_u/W, rho = -r_v, S = (1-2M_N')/(4r)
+CHECK C11: OK  ray equation rho' = sigma_v rho + 4 pi r phi_v^2 (v-Raychaudhuri r_vv - sigma_v r_v + 4 pi r phi_v^2 = 0)
+CHECK C12: OK  mu_v = -8 pi r^2 (r_u/W) phi_v^2 = 8 pi r^2 y phi_v^2 (Eq. muv) from dn1 and the v-constraint
+CHECK C13: OK  u-Raychaudhuri gives d_u(r_u/W) = -4 pi r phi_u^2/W <= 0 (r_u/W non-increasing in u at fixed v)
+CHECK C14: OK  K -> R2^2 + 8 H_AB H^AB/r^2 = 1024 pi^2 Y^2 + 1024 pi^2 Y^2 = 2048 pi^2 (phi_u phi_v/W)^2 (Eq. Kscalar)
+CHECK C15: OK  2048 pi^2 Y^2 = 128 pi^2 [(grad phi)^2]^2
+CHECK C16: OK  Weyl invariant: C^2 = K - 2 R_ab R^ab + R^2/3 = K/6 for R_ab = 8 pi d_a phi d_b phi
+CHECK C17: OK  d ln K/dv = 2 kappa_- - (2k+2)/(v+1) for W ~ e^{-kappa v}, phi_v ~ (1+v)^(-k-1) (K ~ W^-2 phi_v^2 => e^{2 kappa v} (1+v)^{-2k-2})
+CHECK C18: OK  mass term 4 (2M/r)^2/r^4 = 16 M^2/r^6; with the other two terms squares (non-negative) K >= 16 M^2/r^6
+CHECK C19: OK  V = -exp(-kappa v): dV/dv = kappa e^{-kappa v}, hence W_sV = W e^{kappa v}/kappa
+CHECK C20: OK  T^q_vv = -hbar (sigma_v^2 - 2 sigma_vv)/(192 pi^2 r^2) is the 1+1 anomaly term -hbar(...)/(48 pi) divided by 4 pi r^2
+CHECK C21: OK  sigma_v = -kappa, sigma_vv = 0: T^q_vv = -hbar kappa^2/(192 pi^2 r^2); v_flip: phi_v^2 = eps kappa^2/(192 pi^2 r^2)
+CHECK C22: OK  m_N=5, a_N=10: r_- = 1.057475, r_+ = 9.897927, kappa_- = 0.795649, kappa_+ = 0.048969 (text: 1.057475, 9.897927, 0.795649, 0.048969)
+CHECK C23_mN3: OK  kappa_- for m_N = 3 (a_N = 2 m_N) is 0.653 (text 0.653)
+CHECK C23_mN2: OK  kappa_- for m_N = 2 (a_N = 2 m_N) is 0.463 (text 0.463)
+CHECK C23_mN1.6: OK  kappa_- for m_N = 1.6 (a_N = 2 m_N) is 0.302 (text 0.302)
+CHECK C23_mN1.4: OK  kappa_- for m_N = 1.4 (a_N = 2 m_N) is 0.164 (text 0.164)
+  [total 2 s]
+ALL SYMBOLIC CHECKS PASSED
